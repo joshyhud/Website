@@ -9,9 +9,37 @@ html * {
     box-sizing: border-box;
 }
 
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background: #fff;
+    z-index: 999999;
+    display: flex;
+    flex-direction: row;
+}
+.site_name{
+    color: #000;
+    align-self: center;
+    padding-left: 25px;
+}
+
+.nav_items {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 65%;
+}
+.nav_item{
+    color: #000;
+    align-self: center;
+    padding: 0 25px;
+}
+
 .header {
 	position: relative;
-    max-width: 100%;
+    width: 100%;
     height: 100vh;
     margin-top:0;
     background: linear-gradient(to bottom,
@@ -38,8 +66,12 @@ html * {
 .headcontent{
     max-width: 100%;
     text-align: center;
-    padding: 100px 0px 110px 60px; 
     overflow:hidden;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 25%;
+
 }
 h1{
     font-size: 75px;
@@ -47,15 +79,7 @@ h1{
     -webkit-text-stroke: 2px black;
 }
 
-.scroll-down{
-    text-align: center;
-    position: relative;
-    padding: 15px;
-    margin: 0 auto;
-    display: block;
-}
-
-.project{
+.section{
     margin: 50px auto 50px auto;
     width: 75%;
 }
