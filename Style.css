@@ -3,6 +3,7 @@ body {
     background-color: #daedf3;
     font-family: sans-serif;
     font-size: 13pt;
+    margin: 0;
 }
 
 html * {
@@ -63,7 +64,7 @@ html * {
         background-position: 0 100%;
     }
 }
-.headcontent{
+.headtitle{
     max-width: 100%;
     text-align: center;
     overflow:hidden;
@@ -73,16 +74,41 @@ html * {
     top: 25%;
 
 }
+
 h1{
     font-size: 75px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px black;
+    margin: 10px;
+}
+
+.headcontent img {
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 50%;
 }
 
 .section{
     margin: 50px auto 50px auto;
     width: 75%;
 }
+
+.work-container{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.work-item{
+    width: 50%;
+    height: 300px;
+    border: 1px solid black;
+
+
+}
+
 
 .content{
     position: relative;
