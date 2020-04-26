@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "My website 2018",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/joshyhud/josh-hudson.co.uk/issues"
   },
-  "homepage": "https://github.com/joshyhud/josh-hudson.co.uk#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+  "homepage": "https://github.com/joshyhud/josh-hudson.co.uk#readme"
 }
