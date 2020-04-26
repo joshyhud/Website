@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "My website 2018",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.5.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.2"
   },

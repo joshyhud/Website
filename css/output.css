@@ -5,6 +5,11 @@ body {
   margin: 0;
   cursor: default;
 }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 10pt;
+  }
+}
 
 html * {
   box-sizing: border-box;
@@ -51,6 +56,13 @@ html * {
   background-size: 100% 400%;
   animation: gradient 10s ease-in-out infinite alternate;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    position: relative;
+    height: 600px;
+    max-width: 100%;
+  }
+}
 .header .headtitle {
   max-width: 100%;
   text-align: center;
@@ -67,6 +79,7 @@ html * {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px black;
   transition: all ease 0.5s;
+  width: 55%;
 }
 .header .headtitle h1:hover {
   animation: tada ease 2s;
@@ -89,6 +102,13 @@ html * {
 .header .headcontent .header-image:hover img {
   transition: transform ease 1s;
   transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+  .header .headcontent p {
+    font-size: 16px;
+    width: 50%;
+    margin: 30px auto;
+  }
 }
 
 /*Background gradient Animation */
@@ -140,6 +160,13 @@ html * {
   height: 386px;
   border: 2px solid black;
 }
+@media screen and (max-width: 768px) {
+  .section .image img {
+    display: block;
+    height: 175px;
+    max-width: 100%;
+  }
+}
 .section .content {
   position: relative;
   border: 1px solid #daedf3;
@@ -151,12 +178,19 @@ html * {
 .section .content p {
   margin-top: 0;
 }
+@media screen and (max-width: 768px) {
+  .section .content {
+    columns: 1;
+    margin: 30px 0px;
+  }
+}
 .section .work-container {
   width: 100%;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 50px 0px 80px 0px;
 }
 .section .work-container .work-item {
   width: 50%;
@@ -187,46 +221,25 @@ html * {
   opacity: 1;
   transition: opacity ease 0.5s;
 }
+@media screen and (max-width: 768px) {
+  .section .work-container {
+    display: block;
+    margin: 50px 0px 80px 0px;
+  }
+  .section .work-container .work-item {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 30px 0;
+  }
+  .section .work-container .work-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
 .section .contact {
   position: relative;
   margin: 50px auto 50px auto;
   text-align: center;
-}
-
-@media (max-width: 375px) {
-  body {
-    font-size: 10pt;
-  }
-
-  .header {
-    position: relative;
-    height: 600px;
-    max-width: 100%;
-  }
-
-  .headcontent {
-    padding: 80px 80px 0px 70px;
-  }
-
-  h1 {
-    font-size: 45px;
-  }
-
-  .image img {
-    display: block;
-    height: 175px;
-    max-width: 100%;
-  }
-
-  .project {
-    margin: 50px auto 50px auto;
-    max-width: 100%;
-    width: 60%;
-  }
-
-  .content {
-    columns: 1;
-  }
 }
 
 /*# sourceMappingURL=output.css.map */

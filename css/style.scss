@@ -5,6 +5,9 @@ body {
     font-size: 13pt;
     margin: 0;
     cursor: default;
+    @media screen and (max-width: 768px){
+        font-size:10pt;
+    }
 }
 
 html * {
@@ -53,13 +56,20 @@ html * {
     height: 100vh;
     margin-top:0;
     background: linear-gradient(to bottom,
-     rgb(201, 220, 183)0%,
-     rgba(158, 216, 192, 1)23%,
-     rgba(61, 151, 193, 1)42%,
-     rgba(103, 103, 158, 1)80%,
-     rgba(145, 145, 189, 1)100%);
+       rgb(201, 220, 183)0%,
+       rgba(158, 216, 192, 1)23%,
+       rgba(61, 151, 193, 1)42%,
+       rgba(103, 103, 158, 1)80%,
+       rgba(145, 145, 189, 1)100%);
     background-size: 100% 400%;
     animation: gradient 10s ease-in-out infinite alternate;
+
+
+    @media screen and (max-width: 768px){
+        position: relative;
+        height: 600px;
+        max-width:100%;
+    }
 
 
     .headtitle{
@@ -71,7 +81,7 @@ html * {
         position: relative;
         top: 25%;
 
-        h1{
+        h1 {
             width: 20%;
             margin: 0 auto;
             font-size: 75px;
@@ -84,11 +94,14 @@ html * {
                 cursor: default;
             }
 
+
+            width: 55%;
         }
 
     }
 
     .headcontent { 
+
         .header-image {
             width: 200px;
             margin: 0 auto;
@@ -110,6 +123,16 @@ html * {
                     transform: scale(1.1);
                 }
             }
+        }
+
+        @media screen and (max-width: 768px){ 
+
+            p {
+                font-size: 16px;
+                width: 50%;
+                margin: 30px auto;
+            }
+
         }
     }
 }
@@ -175,6 +198,11 @@ to {
         width: 683px;  
         height: 386px ; 
         border: 2px solid black; 
+        @media screen and (max-width: 768px){
+            display: block;
+            height:175px;
+            max-width:100%;
+        }
     }
 
     .content{
@@ -189,14 +217,20 @@ to {
             margin-top: 0;
         }
 
+        @media screen and (max-width: 768px){
+            columns: 1;
+            margin: 30px 0px;
+        }
+
     }
 
-    .work-container{
+    .work-container {
         width: 100%;
         display: flex;
         margin: 0 auto;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 50px 0px 80px 0px;
 
         .work-item{
             width: 50%;
@@ -236,6 +270,23 @@ to {
 
         }
 
+        @media screen and (max-width: 768px) { 
+            display: block;
+            margin: 50px 0px 80px 0px;
+
+            .work-item {
+                width: 100%;
+                height: 200px;
+                margin: 0 0 30px 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+        }
+
     }
     
 
@@ -245,37 +296,4 @@ to {
         text-align: center;
     }
 
-}
-
-@media(max-width: 375px){
-
-    body{
-        font-size:10pt;
-    }
-    .header{
-        position: relative;
-        height: 600px;
-        max-width:100%;
-    }
-    .headcontent{
-        padding: 80px 80px 0px 70px;
-    }
-    h1{
-        font-size: 45px;
-    }
-    .image img{
-        display: block;
-        height:175px;
-        max-width:100%;
-
-    }
-    .project{
-        margin: 50px auto 50px auto;
-        max-width: 100%; 
-        width: 60%;  
-    }
-    .content {
-        columns: 1;
-
-    }
 }
